@@ -2,9 +2,12 @@ import { Module, Global } from '@nestjs/common';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { User } from './models/user.model';
 import { Option } from './models/option.model';
+import { Content } from './models/content.model';
 
-
-const models = TypegooseModule.forFeature([User, Option]);
+/**
+ * 引入Model层
+ */
+const models = TypegooseModule.forFeature([User, Option,Content]);
 
 
 @Global()

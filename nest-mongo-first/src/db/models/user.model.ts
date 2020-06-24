@@ -30,4 +30,5 @@ export class User {
     @Prop()
     sex: number;
 
+
 }
